@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Oswald:wght@500&display=swap');
+
+@media only screen and (width <= 360px){
+    .mobilehidden{
+        display: none;
+    }
+    .mobilehidden1{
+        display: none;
+    }
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root{
+    --primary: #006495;
+    --onprimary: #ffffff;
+
+    --secondary: #50606f;
+
+    --primarycontainer: #cbe6ff;
+    --onprimarycontainer: #001e30;
+
+    --secondarycontainer: #d4e4f6;
+    --onsecondarycontainer: #0c1d29;
+
+    --backgroundColor: #fcfcff;
+    --onbackground: #1a1c1e;
+
+    --outline: #72787e;
+    --surfacevariant:#dee3ea;
+    --onsurfacevariant: #41474d;
+}
+
+
+.header{
+    display: flex;
+    margin-top: 5%;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    left: -12vw;
+    border-radius: 20%;
+    background-image: url(../media/images/inscriptionlogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    position: relative;
+    left: 10vw;
+}
+.loginbutton{
+    padding: 2vw;
+    background-color: var(--secondary);
+    color: var(--onprimary);
+    border-radius: 20%;
+}
+
+hr{
+    position: relative;
+    width: 100vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-top: .6vw solid var(--onbackground);
+    }
+.imgholder{
+    background-color: darkgrey;
+    width: 90vw;
+    height: 24vh;
+    max-width: 90vw;
+    max-height: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7vw;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    background-image: url(../media/images/ad.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    width: 82vw;
+    height: 17vh;
+    margin: auto;
+    padding: 4.5vw;
+}
+
+p{
+    font-size: .9rem;
+    text-align: center;
+    color: var(--onbackground);
+}
+
+.flexreason{
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondarycontainer);
+    width: 82vw;
+    height: 40vh;
+    margin: auto;
+    padding: 8vw;
+    border-radius: 7vw;
+}
+
+.iconholder.time{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    margin-top: -10vw;
+    border-radius: 3vw;
+    background-image: url(../media/images/savetime.png);
+    background-size: cover;
+    background-position: center;
+}
+.iconholder.free{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    margin-top: 12vw;
+    border-radius: 3vw;
+    background-image: url(../media/images/savemoney.png);
+    background-size: cover;
+    background-position: center;
+}
+.iconholder.confusion{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    margin-top: 3vw;
+    border-radius: 3vw;
+    background-image: url(../media/images/noconfusion.png);
+    background-size: cover;
+    background-position: center;
+}
+.iconholder.irl{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    margin-top: 9vw;
+    border-radius: 3vw;
+    background-image: url(../media/images/realtime.png);
+    background-size: cover;
+    background-position: center;
+}
+.iconholder.everyone{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    border-radius: 3vw;
+    background-image: url(../media/images/everyone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.iconholder.videoediting{
+    background-color: white;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+    border-radius: 3vw;
+    background-image: url(../media/images/videoediting.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.reason{
+    color: var(--onsecondarycontainer);
+    font-size: .6rem;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    max-width: 35vw;
+    text-align: center;
+}
+.boldreason{
+    color: var(--onsecondarycontainer);
+    font-size: .8rem;
+    font-weight: bold;
+    margin-top: 2vw;
+}
+.signup{
+    position: relative;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    left: 40vw;
+}
+.signupbutton{
+    padding: 2vw;
+    background-color: var(--primary);
+    color: var(--onprimary);
+    border-radius: 20%;
+}
+
+.flexnavbar{
+    background-color: var(--surfacevariant);
+    display: flex;
+    width: 100vw;
+    height: 20vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8vw;
+}
+.abouticon{
+    background-color: var(--onsurfacevariant);
+    border-radius: 20%;
+    padding: 5vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../media/images/info.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.homeicon{
+    background-color: var(--onsurfacevariant);
+    border-radius: 20%;
+    padding: 5vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../media/images/homeicon.png);
+    background-size: cover;
+    background-position: center;
+}
+.usericon{
+    background-color: var(--onsurfacevariant);
+    border-radius: 20%;
+    padding: 5vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../media/images/user.png);
+    background-size: cover;
+    background-position: center;
+}
+
+button{
+    background-color: var(--onsurfacevariant);
+    border-radius: 20%;
+    padding: 5vw;
+}
+
+
+
+
+
+
+/*******DESKTOP VERSION**********/
+@media screen and (width >=1366px){
+    .header{display:none;}
+    .flexnavbar{display:none;}
+
+    
+
+       .mobilehidden{
+        display: flex;
+        background-color: var(--backgroundColor);
+        width: 100vw;
+        height: 15vh;
+        margin-top: 1%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    
+    .logo{
+        width: 5vw;
+        height: 5vw;
+        position: relative;
+        left: 0vw;
+    }
+    
+    .vline {
+        height: 10vh;
+        border-left: .1vw solid var(--onbackground);
+        position: relative;
+        left: -4vw;
+    }
+    
+    .navlink{
+        position: relative;
+        left: -8vw;
+        padding: 0;
+    }
+    
+    .tab{
+        padding: 1vw;
+        background-color: var(--backgroundColor);
+        color: var(--onbackground);
+        border-radius: 0%;
+        border: 0vw none;
+        font-size: 1.5rem;
+    }
+
+
+
+    .logbutton{
+         position: relative;
+         left: 7vw;
+     }
+    
+    .account{
+        padding: 1vw;
+        background-color: var(--primary);
+        color: var(--onprimary);
+        position: relative;
+        left: -6vw;
+    }
+    .account1 {
+        padding: 1vw;
+        position: relative;
+        left: 2vw;
+        background-color: var(--secondary);
+        color: var(--onprimary);
+    
+    }
+    
+    .mobilehidden1{
+        margin-top: 1%;
+    }
+    
+hr{
+    width: 100vw;
+    border-top: .1vw solid var(--onbackground);
+}
+
+.imgholder{
+    width: 90vw;
+    height: 90vh;
+    max-height: 90vh;
+    margin-top: 8vw;
+    margin-bottom: 4vw;
+    border-radius: 4vw;
+}
+
+p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.flexreason{
+    width: 82vw;
+    height: 87vh;
+    padding: 8vw;
+    border-radius: 7vw;
+    margin-top: 4vw;
+}
+
+.iconholder.time{
+    width: 9vw;
+    height: 9vw;
+    margin-top: -2vw;
+}
+
+.iconholder.free{
+    width: 9vw;
+    height: 9vw;
+    margin-top: 9vw;
+}
+
+.iconholder.confusion{
+    width: 9vw;
+    height: 9vw;
+    margin-top: 3vw;
+}
+
+.iconholder.irl{
+    width: 9vw;
+    height: 9vw;
+    margin-top: 10vw;
+}
+
+.iconholder.everyone{
+    width: 9vw;
+    height: 9vw;
+    margin-top: 3vw;
+}
+
+.iconholder.videoediting{
+    width: 9vw;
+    height: 9vw;
+    margin-top: 3vw;
+}
+
+
+.reason{
+    font-size: 1.5rem;
+}
+.boldreason{
+    font-size: 1.7rem;
+}
+
+.signup{
+    margin-top: 7%;
+    left: 47vw;
+}
+.signupbutton{
+    padding: 2vw;
+    border-radius: 20%;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+    }
